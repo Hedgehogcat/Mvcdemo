@@ -15,7 +15,7 @@ namespace WebServiceDemp
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            WebServiceDemp.cn.com.webxml.www.WeatherWebService ws = new WebServiceDemp.cn.com.webxml.www.WeatherWebService();
+              WebServiceDemp.cn.com.webxml.www.WeatherWebService ws = new WebServiceDemp.cn.com.webxml.www.WeatherWebService();
               string[] r = ws.getWeatherbyCityName(this.TextBox1.Text);
               this.TextBox2.Text = "";
               if (r == null)
